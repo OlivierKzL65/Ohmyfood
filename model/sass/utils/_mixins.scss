@@ -1,0 +1,31 @@
+// Mixins pour le responsive
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+// Mixin avec paramètres pour le texte
+@mixin text-format($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+// Mixin avec paramètres pour l'animation en cascade
+@mixin menu-cascade-delay($cats, $plats) {
+    @for $c from 1 through $cats {
+        section.menu-category:nth-of-type(#{$c + 1}) {
+            @for $i from 1 through $plats {
+                .menu-item:nth-of-type(#{$i}) {
+                    animation-delay: #{($c - 1) * 0.4 + $i * 0.1}s;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+// ANIMATION APPARITION CASCADE
+@keyframes slideUpFade {
+    0% { opacity: 0; transform: translateY(1.25rem); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+// LOADER
+@keyframes loaderFade {
+    0%, 80% { opacity: 1; visibility: visible; }
+    100% { opacity: 0; visibility: hidden; pointer-events: none; }
+}
+
+@keyframes ringSpin {
+    0% { transform: rotate(0deg) scale(1); opacity: 1; }
+    80% { transform: rotate(720deg) scale(1); opacity: 1; } 
+    100% { transform: rotate(720deg) scale(4); opacity: 0; visibility: hidden; } 
+}
+
+@keyframes logoSpin {
+    0% { transform: rotate(0deg) scale(1); opacity: 1; }
+    80% { transform: rotate(360deg) scale(1); opacity: 1; } 
+    100% { transform: rotate(360deg) scale(4); opacity: 0; visibility: hidden; } 
+}
