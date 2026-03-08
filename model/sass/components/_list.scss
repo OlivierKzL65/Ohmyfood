@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // COMPOSANT : LISTE À ÉTAPES
 .step-list {
     display: flex;
@@ -45,4 +46,53 @@
             color: $primary;
         }
     }
+=======
+// COMPOSANT : LISTE À ÉTAPES
+.step-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    counter-reset: steps; 
+
+    @include desktop {
+        flex-direction: row; 
+    }
+
+    li {
+        @extend %shadow-light;
+        background-color: $bg-light;
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 1.5rem;
+        font-weight: 500;
+
+        @include desktop { flex: 1; } 
+
+        &::before {
+            counter-increment: steps;
+            content: counter(steps);
+            @extend %flex-center;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: $primary;
+            color: $text-light;
+            border-radius: 50%;
+            position: absolute;
+            left: -0.75rem; 
+            font-size: 0.9rem;
+        }
+
+        i {
+            color: lighten($text-main, 40%);
+            font-size: 1.2rem;
+        }
+
+        &:hover i {
+            color: $primary;
+        }
+    }
+>>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
 }

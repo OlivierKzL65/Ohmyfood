@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Mixins pour le responsive
 @mixin tablet {
     @media (min-width: #{$tablet}) {
@@ -28,4 +29,30 @@
             }
         }
     }
+=======
+// Mixins pour le responsive (Mobile First par défaut, on gère les grands écrans ici)
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+// Mixin avec paramètres pour styliser rapidement le texte
+@mixin text-format($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+// Mixin pour couper le texte trop long avec des points de suspension (...)
+@mixin text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+>>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
 }

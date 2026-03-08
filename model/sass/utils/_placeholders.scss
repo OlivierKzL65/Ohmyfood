@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Centrage
 %flex-center {
     display: flex;
@@ -25,4 +26,26 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+=======
+// Centrage parfait avec Flexbox
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Ombre légère (pour les cartes et les boutons)
+%shadow-light {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    
+    &:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+}
+
+// L'effet de dégradé violet/rose (très présent sur le projet)
+%gradient-primary {
+    background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+>>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
 }

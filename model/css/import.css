@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @keyframes slideUpFade {
   0% {
     opacity: 0;
@@ -49,6 +50,8 @@
     visibility: hidden;
   }
 }
+=======
+>>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
 .menu-order, .menu-item__check, .header-menu, .functioning li::before, .location, .step-list li::before, .btn, header {
   display: flex;
   justify-content: center;
@@ -67,12 +70,15 @@
   background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
 }
 
+<<<<<<< HEAD
 .menu-item__text h3, .menu-item__text p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+=======
+>>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -105,6 +111,10 @@ header {
   padding: 1rem 0;
   background-color: #ffffff;
   position: relative;
+<<<<<<< HEAD
+=======
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+>>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
   z-index: 10;
 }
 header img {
@@ -282,6 +292,50 @@ footer li a i {
   animation: logoSpin 3s forwards;
 }
 
+<<<<<<< HEAD
+=======
+@keyframes loaderFade {
+  0%, 80% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+@keyframes ringSpin {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  80% {
+    transform: rotate(720deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(720deg) scale(4);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes logoSpin {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  80% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(4);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+>>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
 .location {
   background-color: rgb(233.25, 233.25, 233.25);
   padding: 1rem;
@@ -397,8 +451,16 @@ footer li a i {
   display: block;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   color: inherit;
   text-decoration: none;
+=======
+}
+.card figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+>>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
 }
 .card img {
   width: 100%;
@@ -406,6 +468,7 @@ footer li a i {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem 1rem 0 0;
+<<<<<<< HEAD
   display: block;
 }
 .card__content {
@@ -416,6 +479,17 @@ footer li a i {
   margin: 0 0 0.25rem 0;
 }
 .card__content p {
+=======
+}
+.card figcaption {
+  padding: 1rem;
+  position: relative;
+}
+.card h3 {
+  margin: 0 0 0.25rem 0;
+}
+.card p {
+>>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
   margin: 0;
 }
 .card .badge-new {
@@ -527,6 +601,12 @@ footer li a i {
 .menu-item__text h3, .menu-item__text p {
   margin: 0;
   width: 100%;
+<<<<<<< HEAD
+=======
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+>>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
 }
 .menu-item__text h3 {
   font-size: 1.1rem;
@@ -553,15 +633,42 @@ footer li a i {
 }
 .menu-item__check i {
   transition: transform 0.4s ease-in-out;
+<<<<<<< HEAD
   transform: rotate(0deg);
+=======
+>>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
 }
 .menu-item:hover .menu-item__check {
   margin-right: 0;
 }
 .menu-item:hover .menu-item__check i {
+<<<<<<< HEAD
   transform: rotate(-360deg);
 }
 
+=======
+  transform: rotate(360deg);
+}
+
+.menu-order {
+  margin-top: 3rem;
+}
+.menu-order .btn {
+  padding: 1rem 3.5rem;
+  font-size: 1rem;
+}
+
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+>>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
 section.menu-category:nth-of-type(2) .menu-item:nth-of-type(1) {
   animation-delay: 0.1s;
 }
@@ -608,6 +715,7 @@ section.menu-category:nth-of-type(4) .menu-item:nth-of-type(4) {
 }
 section.menu-category:nth-of-type(4) .menu-item:nth-of-type(5) {
   animation-delay: 1.3s;
+<<<<<<< HEAD
 }
 
 .menu-order {
@@ -616,4 +724,6 @@ section.menu-category:nth-of-type(4) .menu-item:nth-of-type(5) {
 .menu-order .btn {
   padding: 1rem 3.5rem;
   font-size: 1rem;
+=======
+>>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
 }/*# sourceMappingURL=import.css.map */

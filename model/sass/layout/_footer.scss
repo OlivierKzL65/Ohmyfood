@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 footer {
     background-color: $bg-dark;
     color: $text-light;
@@ -52,4 +53,64 @@ footer {
             margin: 0;
         }
     }
+=======
+footer {
+    background-color: $bg-dark; // Utilisation de ta variable
+    color: $text-light;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+
+    h2 {
+        font-family: $font-title; // La police Shrikhand
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0 0 1rem 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column; // En colonne sur mobile
+        gap: 0.5rem;
+
+        // Utilisation de ton Mixin pour le Responsive (Desktop)
+        @include desktop {
+            flex-direction: row; // En ligne sur grand écran
+            justify-content: flex-end; // Aligné à droite
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+
+    li {
+        a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem; // Espace entre l'icône et le texte
+            font-weight: 500;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $tertiary; // Petit effet au survol (couleur menthe)
+            }
+
+            // On s'assure que les icônes ont toutes la même largeur pour que le texte soit bien aligné
+            i {
+                width: 1rem; 
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    // Le titre remonte sur la même ligne que les liens sur desktop
+    @include desktop {
+        display: flex;
+        flex-direction: row-reverse; // Le logo à droite, les liens à gauche
+        align-items: center;
+        padding: 2rem 5rem;
+        gap: 4rem;
+
+        h2 {
+            margin: 0;
+        }
+    }
+>>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
 }
