@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 header {
     @extend %flex-center;
     padding: 1rem 0;
@@ -10,18 +9,4 @@ header {
         width: 12rem;
         height: auto;
     }
-=======
-header {
-    @extend %flex-center;
-    padding: 1rem 0;
-    background-color: #ffffff;
-    position: relative;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    z-index: 10;
-
-    img {
-        width: 12rem;
-        height: auto;
-    }
->>>>>>> d15fc70cdb34e8668b47c86a5602fa27a122242c
 }
