@@ -117,19 +117,15 @@ li {
             font-size: 1.2rem;
         }
 
-        &:hover {
-            i {
+        &:hover i{
                 color: $primary;
             }
-        }
 
-        &:last-child {
-            i {
+        &:last-child i{
                 color: $primary;
             }
         }
     }
-}
 
 // RESTAURANTS
 .restaurants {
