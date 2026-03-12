@@ -40,13 +40,17 @@
 
     .heart-filled {
         position: absolute;
-        color: $primary; 
+        background: linear-gradient(180deg, $primary 0%, $secondary 100%);
+        background-clip: text; 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
         transform: scale(0);
         opacity: 0;
     }
 
-    &:hover {
+    &:hover, &--active {
         .heart-empty {
             opacity: 0; 
         }

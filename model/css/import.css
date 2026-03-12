@@ -197,15 +197,19 @@ footer li a i {
 }
 .btn-heart .heart-filled {
   position: absolute;
-  color: #9356DC;
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   transform: scale(0);
   opacity: 0;
 }
-.btn-heart:hover .heart-empty {
+.btn-heart:hover .heart-empty, .btn-heart--active .heart-empty {
   opacity: 0;
 }
-.btn-heart:hover .heart-filled {
+.btn-heart:hover .heart-filled, .btn-heart--active .heart-filled {
   transform: scale(1);
   opacity: 1;
 }
